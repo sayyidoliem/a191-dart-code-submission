@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Test Exam 4" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <option name="envs">
+      <entry key="NAME" value="Sayyid Muhammad Muslim As'ad Sunarko" />
+    </option>
+    <option name="filePath" value="$PROJECT_DIR$/test/exam4_test.dart" />
+    <method v="2" />
+  </configuration>
+</component>
