@@ -5,6 +5,9 @@ dynamic studentInfo() {
   var favNumber;
   var isDicodingStudent;
 
+  name = 'Sayyid Muhammad Muslim As Ad Sunarko';
+  favNumber = 3;
+  isDicodingStudent = true;
   // End of TODO 1
   return [name, favNumber, isDicodingStudent];
 }
