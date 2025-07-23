@@ -6,16 +6,18 @@ class DicodingStudent {
 
   int incrementAge() {
     // TODO 1
-
-    return 0;
+    return age + 1; //for final age, just add + 1
 
     // End of TODO 1
   }
 
-  Future<String> getStudentInfo() {
+  Future<String> getStudentInfo() async {
+    // await need async
     // TODO 2
 
-    return Future.value("");
+    await Future.delayed(Duration(seconds: 3)); //for delay 3 detik
+    return Future.value(
+        "Nama lengkap : $fullName, Umur : $age tahun"); //Future.value for show the async value
 
     // End of TODO 2
   }
