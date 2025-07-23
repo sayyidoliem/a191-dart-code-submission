@@ -6,7 +6,8 @@ class DicodingStudent {
 
   int incrementAge() {
     // TODO 1
-    return age + 1; //for final age, just add + 1
+
+    return age + 1; //add +1 for final age
 
     // End of TODO 1
   }
@@ -15,9 +16,9 @@ class DicodingStudent {
     // await need async
     // TODO 2
 
-    await Future.delayed(Duration(seconds: 3)); //for delay 3 detik
+    await Future.delayed(Duration(seconds: 3)); //for delay 3 secon
     return Future.value(
-        "Nama lengkap : $fullName, Umur : $age tahun"); //Future.value for show the async value
+        "Nama Lengkap: $fullName, Umur: $age tahun"); //Future.value for show the async value
 
     // End of TODO 2
   }
@@ -26,7 +27,14 @@ class DicodingStudent {
 dynamic createStudent() {
   // TODO 3
 
-  return null;
+  const String newName = 'abc';
+  const int newAge = 17;
 
+  if (newName.length < 3 || newAge < 15 || newAge > 99) {
+    // check name min. 3 char and age 15 - 99
+    throw Exception('Nama atau umur tidak valid');
+  }
+
+  return DicodingStudent(newName, newAge);
   // End of TODO 3
 }
