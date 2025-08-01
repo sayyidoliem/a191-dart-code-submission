@@ -1,13 +1,10 @@
 dynamic studentInfo() {
   // TODO 1
 
-  var name;
-  var favNumber;
-  var isDicodingStudent;
+  String name = 'Sayyid Muhammad Muslim As Ad Sunarko';
+  int favNumber = 3;
+  bool isDicodingStudent = true;
 
-  name = 'Sayyid Muhammad Muslim As Ad Sunarko';
-  favNumber = 3;
-  isDicodingStudent = true;
   // End of TODO 1
   return [name, favNumber, isDicodingStudent];
 }
@@ -20,7 +17,7 @@ dynamic circleArea(num r) {
 
     // TODO 2
 
-    return 0;
+    return pi * r * r; // rumus for circle area
 
     // End of TODO 2
   }
@@ -29,7 +26,17 @@ dynamic circleArea(num r) {
 int? parseAndAddOne(String? input) {
   // TODO 3
 
-  return 0;
+  if (input == null) {
+    // check input not null
+    return null;
+  }
+
+  try {
+    int number = int.parse(input); // convert string to int
+    return number + 1;
+  } catch (e) {
+    throw Exception('Input harus berupa angka');
+  }
 
   // End of TODO 3
 }
